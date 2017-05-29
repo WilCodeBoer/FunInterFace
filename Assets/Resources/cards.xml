@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<CardDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cards>
+    <Card Type="Spell" Frame="Spell" Element="Spell" Level="2" Name="Ice Spike" Value="150" Abilities="1" AbilityTwo="Shoot spikes of ice: 25 damage" Color="Bronze" ImageFrame="ImageFrame" Image="Ice Spike" />
+    <Card Type="Trap" Frame="Trap" Element="Trap" Level="4" Name="Pitfall" Value="300" Abilities="1" AbilityTwo="When an enemy attacks disable that creature for 1 turn" Color="Silver" ImageFrame="ImageFrame" Image="Pitfall" />
+    <Card Type="Spell" Frame="Spell" Element="Spell" Level="2" Name="Ice Spike" Value="150" Abilities="1" AbilityTwo="Shoot spikes of ice: 25 damage" Color="Bronze" ImageFrame="ImageFrame" Image="Ice Spike" />
+    <Card Type="Trap" Frame="Trap" Element="Trap" Level="3" Name="Swarm" Value="225" Abilities="1" AbilityTwo="When an enemy attack leech 20 health" Color="Silver" ImageFrame="ImageFrame" Image="Swarm" />
+    <Card Type="Creature" Frame="Creature" Element="Earth" Level="5" Name="Elephant" Value="250" Abilities="2" AbilityOne="Power Strike: 20 damage" AbilityTwo="" AbilityThree="Heelix blast: 55 damage" Color="Silver" ImageFrame="ImageFrame" Image="Elephant" />
+    <Card Type="Creature" Frame="Creature" Element="Earth" Level="6" Name="Elephant" Value="300" Abilities="2" AbilityOne="High Kick: 25 damage" AbilityTwo="" AbilityThree="Energy blast: 40 damage" Color="Silver" ImageFrame="ImageFrame" Image="Elephant" />
+    <Card Type="Creature" Frame="Creature" Element="Wind" Level="5" Name="GangsterBird" Value="250" Abilities="2" AbilityOne="Power Strike: 20 damage" AbilityTwo="" AbilityThree="Heelix blast: 55 damage" Color="Silver" ImageFrame="ImageFrame" Image="GangsterBird" />
+    <Card Type="Creature" Frame="Creature" Element="Water" Level="8" Name="Dolphin" Value="400" Abilities="3" AbilityOne="High Kick: 25 damage" AbilityTwo="Headbut: 30 damage" AbilityThree="Death beam:80 damage" Color="Gold" ImageFrame="ImageFrame" Image="Dolphin" />
+    <Card Type="Creature" Frame="Creature" Element="Fire" Level="7" Name="FlameWolf" Value="350" Abilities="3" AbilityOne="Power Strike: 20 damage" AbilityTwo="Headbut: 30 damage" AbilityThree="Death beam:80 damage" Color="Gold" ImageFrame="ImageFrame" Image="FlameWolf" />
+  </Cards>
+</CardDatabase>
