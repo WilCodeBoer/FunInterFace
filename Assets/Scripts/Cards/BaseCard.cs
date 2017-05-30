@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Xml.Serialization;
+using System.Linq;
+using System;
 
 public class BaseCard : MonoBehaviour {
 
@@ -36,7 +38,7 @@ public class BaseCard : MonoBehaviour {
 }
 	
 
-public class CardData {
+public class CardData : IComparable<CardData> {
 	[XmlAttribute("Type")]
 	public string Type;
 	[XmlAttribute("Frame")]
@@ -49,6 +51,9 @@ public class CardData {
 	public int Level;
 	[XmlAttribute("Name")]
 	public string Name;
+	public int CompareTo(CardData other){
+		return Name.CompareTo (other.Name);
+	}
 	[XmlAttribute("Value")]
 	public int Value;
 	[XmlAttribute("ImageFrame")]

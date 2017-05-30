@@ -105,6 +105,7 @@ public class CardFactory : MonoBehaviour {
 		goRect.position = holder.position;
 		goRect.localScale = new Vector3 (0.4152496f, 0.4152496f, 0.4152496f);
 		SaveData.AddCardData (card);
+		creatureCard.tag = "Card";
 		return creatureCard;
 	}
 
@@ -158,6 +159,7 @@ public class CardFactory : MonoBehaviour {
 		goRect.position = holder.position;
 		goRect.localScale = new Vector3 (0.4152496f, 0.4152496f, 0.4152496f);
 		SaveData.AddCardData (card);
+		trapCard.tag = "Card";
 		return trapCard;
 	}
 
@@ -211,6 +213,7 @@ public class CardFactory : MonoBehaviour {
 		goRect.position = holder.position;
 		goRect.localScale = new Vector3 (0.4152496f, 0.4152496f, 0.4152496f);
 		SaveData.AddCardData (card);
+		spellCard.tag = "Card";
 		return spellCard;
 	}
 
@@ -231,8 +234,6 @@ public class CardFactory : MonoBehaviour {
 				packScreens[0].SetActive (true);
 				packScreens[1].SetActive (false);
 				packScreens[2].SetActive (false);
-				createSpell ();
-				createTrap ();
 				if (Random.Range (1, 10) < 5) {
 					createSpell ();
 				} else {
@@ -240,16 +241,12 @@ public class CardFactory : MonoBehaviour {
 				}
 				createCreature (Random.Range (1, 4));
 				createCreature (Random.Range (1, 4));
-				if (Random.Range (0, 10) >= 5) {
-					createCreature (7);
-				}
-				break;
+				createCreature (7);
+					break;
 			case "Silver":
 				packScreens[0].SetActive (false);
 				packScreens[1].SetActive (true);
 				packScreens[2].SetActive (false);
-				createSpell ();
-				createTrap ();
 				if (Random.Range (1, 10) < 5) {
 					createSpell ();
 				} else {
@@ -263,16 +260,12 @@ public class CardFactory : MonoBehaviour {
 				createCreature (Random.Range (3, 6));
 				createCreature (Random.Range (3, 6));
 				createCreature (Random.Range (5, 7));
-				if (Random.Range (0, 10) >= 5) {
-					createCreature (8);
-				}
+				createCreature (8);
 				break;
 			case "Gold":
 				packScreens[0].SetActive (false);
 				packScreens[1].SetActive (false);
 				packScreens[2].SetActive (true);
-				createSpell ();
-				createTrap ();
 				if (Random.Range (1, 10) < 5) {
 					createSpell ();
 				} else {
@@ -288,9 +281,7 @@ public class CardFactory : MonoBehaviour {
 				createCreature (Random.Range (5, 8));
 				createCreature (Random.Range (7, 9));
 				createCreature (Random.Range (7, 9));
-				if (Random.Range (0, 10) >= 5) {
-					createCreature (10);
-				}
+				createCreature (10);
 				break;
 			}
 		}

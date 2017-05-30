@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+
 public class BackToShop : MonoBehaviour {
 	public GameObject shop;
 
@@ -14,6 +15,9 @@ public class BackToShop : MonoBehaviour {
 	}
 
 	void goBack(){
+		foreach (GameObject card in GameObject.FindGameObjectsWithTag("Card")) {
+			Destroy (card);
+		}
 		shop.SetActive (true);
 		this.gameObject.transform.parent.gameObject.SetActive (false);
 	}

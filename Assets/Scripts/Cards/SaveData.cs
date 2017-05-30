@@ -13,6 +13,7 @@ public class SaveData  {
 
 	public static void loadAll(string path){
 		cardDatabase = LoadCards (path);
+		cardDatabase.cards.Sort ();
 		foreach (CardData data in cardDatabase.cards) {
 			CardFactory.LoadPlaceHolder (data);
 
@@ -22,7 +23,7 @@ public class SaveData  {
 
 	public static void LoadCreatures(string path){
 		cardDatabase = LoadCards (path);
-
+		cardDatabase.cards.Sort ();
 		foreach (CardData data in cardDatabase.cards) {
 			if (data.Type == "Creature") {
 				CardFactory.LoadPlaceHolder(data);
@@ -32,7 +33,7 @@ public class SaveData  {
 
 	public static void LoadSpells(string path){
 		cardDatabase = LoadCards (path);
-
+		cardDatabase.cards.Sort ();
 		foreach (CardData data in cardDatabase.cards) {
 			if (data.Type == "Spell") {
 				CardFactory.LoadPlaceHolder(data);
@@ -42,7 +43,7 @@ public class SaveData  {
 
 	public static void LoadTraps(string path){
 		cardDatabase = LoadCards (path);
-
+		cardDatabase.cards.Sort ();
 		foreach (CardData data in cardDatabase.cards) {
 			if (data.Type == "Trap") {
 				CardFactory.LoadPlaceHolder(data);
@@ -53,7 +54,6 @@ public class SaveData  {
 
 	public static void Load(string path){
 		cardDatabase = LoadCards (path);
-
 		foreach (CardData data in cardDatabase.cards) {
 			CardFactory.LoadPlaceHolder (data);
 		}
